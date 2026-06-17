@@ -45,16 +45,15 @@ console.log(numero || valor);
 //NOT
 console.log(!verdadero);
 
-// if (numero == 10){
-//     console.log("igual")
-// } 
-// if (numero === 10){
-//     console.log("no es igual")
-// }
 
-// const valor = "10";
-// if (valor !== 10){
-//     console.log("no es igual")
-// } else {
-//     console.log("es igual")
-// }
+const a = 10;
+const b = 20;
+const c = "30";
+
+console.log(a == b)
+console.log(a === b)
+console.log(a === c)
+console.log(a == c);
+a === b;
+a === c;
+a == c;

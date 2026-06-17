@@ -54,4 +54,13 @@ function condicionternaria(){
 }
 
 
+let nombre = "Fernando";
+if (nombre === "Fernando"){
+  console.log("hola fer");
+} else if (nombre == "Cristian"){
+  console.log("hola cris");
+} else {
+  console.log("No encontre tu nombre")
+}
+
 
