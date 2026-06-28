@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f9;
+        }
+        h1 {
+            color: #333;
+        }
+        .tarea-item {
+            background-color: #fff;
+            border-left: 5px solid #007bff;
+            padding: 10px 20px;
+            margin-bottom: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .tarea-item h3 {
+            margin-top: 0;
+            color: #007bff;
+        }
+        .tarea-item button {
+            margin-top: 0;
+            background-color: #ffc107;
+            padding: 5px 10px;
+            border-radius: 3px;
+            border: 0px;
+        }
+        .estado {
+            float: right;
+            padding: 5px 10px;
+            border-radius: 3px;
+            font-size: 0.9em;
+            color: white;
+        }
+        /* Estilos de estado */
+        .completo {
+            background-color: #28a745;
+        }
+        .pendiente {
+            background-color: #ffc107;
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>📋 Mis Tareas Pendientes</h1>
+    <h2>Agregar Tarea</h2>
+    <form id="formularioTarea">
+        <label for="">Nombre tarea: </label> <br>
+        <input type="text" name="nombre" id="nombre" required><br>
+        <label for="">Descripción: </label><br>
+        <textarea id="descripcion" name="descripcion" rows="4" cols="50" required></textarea><br>
+        <button type="submit">Guardar Tarea</button>
+    </form>
+
+    <h2>Siguiente tarea</h2>
+    <div id="proximaTarea"></div>
+    <h2>Tareas Pendientes</h2>
+    <ul id="tareas" name="tareas"></ul>
+
+    <script type="module" src="GestorTareas.js"></script>
+
+</body>
+</html>
